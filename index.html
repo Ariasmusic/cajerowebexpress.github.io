@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-image: url('https://images.unsplash.com/photo-1707075891545-c36963b873e6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9uZG8lMjBkZSUyMGRpbmVyb3xlbnwwfHwwfHx8MA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+        }
+
+        input[type="password"],
+        input[type="number"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #0fdf7e;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00b300;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <form>
+        <h1>💲Cajero Web Express 🫰</h1>
+        <input type="password" id="pin" placeholder="Ingrese su pin" required>
+
+        <input type="number" id="cant" placeholder="Ingrese la cantidad" required>
+
+        <button type="button" id="btn_consulSal" onclick="consultarSaldo()">Consultar Saldo</button>
+        <button type="button" id="btn_Depositar" onclick="depositar()">Depositar Saldo</button>
+        <button type="button" id="btn_Retirar" onclick="retirar()">Retirar Saldo</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
